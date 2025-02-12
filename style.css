@@ -1,0 +1,98 @@
+.wrapp {
+    background-image: url(./img/wrap-fon.jpg);
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    background-image: url(./img/fon.jpg);
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/mario.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+
+}
+
+#damper {
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/mushroom.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px;
+    left: 560px;
+}
+
+#score {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    left: 370px;
+    margin-top: 50px;
+    font-size: larger;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.btn-start {
+    width: 600px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(58, 30, 93);
+    color: #fff;
+
+}
+
+.animate {
+    animation: damperMove 2s infinite linear;
+}
+
+.active {
+    animation: jumperActive 0.3s linear;
+}
+
+@keyframes damperMove {
+    0% {
+        left: 560px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+@keyframes jumperActive {
+    0% {
+        top: 150px;
+    }
+
+    20% {
+        top: 100px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
